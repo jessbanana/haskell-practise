@@ -22,13 +22,11 @@ import Mooc.Todo
 -- values 1 and 2, respectively. 
 one :: Integer 
 two :: Integer
-
 ------------------------------------------------------------------------------
 -- Ex 2: define the function double of type Integer->Integer. Double
 -- should take one argument and return it multiplied by two.
-
 double :: Integer -> Integer
-double x = todo
+double x = x*2
 
 ------------------------------------------------------------------------------
 -- Ex 3: define the function quadruple that uses the function double
@@ -52,7 +50,8 @@ quadruple x = todo
 --   distance 0 0 1 1  ==>  1.4142135...
 --   distance 1 1 4 5  ==>  5.0
 
-distance = todo
+distance :: Double -> Double -> Double -> Double -> Double  
+distance x1 x2 y1 y2 =  sqrt((x1 - x2)^2 + (y1 - y2)^2)
 
 ------------------------------------------------------------------------------
 -- Ex 5: define the function eeny that returns "eeny" for even inputs
